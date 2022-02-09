@@ -1,6 +1,7 @@
 const balls = document.querySelectorAll('.ball');
 const answer = document.getElementById('answer');
 const rgbColor = document.getElementById('rgb-color');
+const bntResetGame = document.getElementById('reset-game');
 
 const rgb = (a, b, c) => {
   a = Math.floor(Math.random() * 256);
@@ -13,7 +14,7 @@ const rgb = (a, b, c) => {
 const corAletoria = () => {
   balls.forEach((ball) => {
     ball.style.backgroundColor = rgb();
-  })
+  });
 };
 
 corAletoria();
@@ -25,9 +26,9 @@ const ballCerta = () => {
   de1A6 = balls[de1A6];
   rgbColor.innerText = de1A6.style.backgroundColor;
   return rgbColor.innerText;
-}
-console.log(ballCerta());
+};
 
+ballCerta();
 answer.innerText = 'Escolha uma cor';
 
 const textoResposta = (event) => {
@@ -40,4 +41,9 @@ const textoResposta = (event) => {
   }
 };
 
-balls.forEach((ball) => ball.addEventListener('click', textoResposta))
+const refresh = () => {
+  window.location.reload();
+}
+
+balls.forEach((ball) => ball.addEventListener('click', textoResposta));
+bntResetGame.addEventListener('click', refresh);
