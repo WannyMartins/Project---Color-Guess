@@ -49,13 +49,13 @@ const textoResposta = (event) => {
     answer.innerText = 'Acertou!';
   } else {
     answer.innerHTML = 'Errou! Tente novamente!';
-    resultPlacar -= 1;
+    // resultPlacar -= 1;
     score.innerText = resultPlacar;
-    if (resultPlacar <= -6) {
-      resultPlacar = 0;
-      answer.innerHTML = 'Você Perdeu! Clique em Reiniciar o jogo!';
-      score.innerText = 0;
-    }
+    // if (resultPlacar <= -6) {
+    //   resultPlacar = 0;
+    //   answer.innerHTML = 'Você Perdeu! Clique em Reiniciar o jogo!';
+    //   score.innerText = 0;
+    // }
   }
 };
 
