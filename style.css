@@ -1,12 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&family=Patrick+Hand&family=Roboto:ital,wght@1,500&display=swap') ;
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Patrick Hand, cursive;
+  margin: auto  50px;
+}
+
+header {
+  background-color: rgb(232, 230, 215);
+  color: black;
+  font-size: 3rem;
+  border: groove 40px cornflowerblue;
+  width: 100%;
+  padding: 60px;
+  text-align: center;
+}
+
+main {
+  width: 100%;
+  background-image: url('imagens/tijolinhos.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-bottom: solid 10px black;
+}
+
+.rgb {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.textos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+#rgb-color {
+  font-size: 5rem;
+  background-color: rgb(232, 230, 215);
+  width: 700px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 20px;
+  border: groove cornflowerblue;
+}
+
+button {
+  margin: 50px;
+  align-items: center;
+  font-size: 3.5rem;
+  background-color: rgb(232, 230, 215);
+  padding: 35px;
+  width: 500px;
+  border-radius: 20px;
+  border: groove cornflowerblue;
+  font-family: Patrick Hand, cursive;
+  font-weight: 600;
+}
+
+
+#placar {
+  display: flex;
+  border-radius: 80px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(232, 230, 215);
+  border: groove cornflowerblue 50px;
+  font-size: 10em;
+  padding: 30px;
+  margin: 40px 110px;
+}
+
+#score {
+  text-align: center;
+  display: flex;
+  font-size: 2em;
+  margin: -35px;
+  padding: 0 300px;
+}
+
+#placar-palavra {
+  text-align: center;
+  border-right: groove cornflowerblue 50px;
+  width: 1200px;
+  border: groove reverse cornflowerblue 50px;
+  margin: -60px;
+  padding: 110px;
+  padding-left: 160px;
+}
+
+#answer {
+  border: groove cornflowerblue 10px;
+  font-size: 5rem;
+  background-color: rgb(232, 230, 215);
+  padding: 30px;
+  border-radius: 50px;
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+section {
+  display: flex;
+  width: 1000px;
+  justify-content: space-around;
+  border: groove cornflowerblue 10px;
+  margin: 80px auto;
+  padding: 20px;
+  border-radius: 60px;
+  background-color: rgb(232, 230, 215);
+}
+
 .ball {
   border-radius: 100%;
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   border: solid 1px black;
+  margin-top: 40px;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-around;
+  margin: 0 auto;
+  font-size: 3.5rem;
+  padding: 50px;
+  background-color: rgb(232, 230, 215);
+}
+
+footer p {
+  text-align: center;
 }

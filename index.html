@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,21 +12,38 @@
         <h1 id="title">Adivinhe a Cor</h1>
     </header>
     <main>
-        <div>
+      
+
+        <div class= 'rgb'>
             <p id="rgb-color">RGB(168, 34, 1)</p>
+            <button id="reset-game">Reiniciar o Jogo</button>
+        </div>
+        <div id='placar'>
+            <p id='placar-palavra'>Placar</p>
             <p id="score">0</p>
+        </div>
             <p id="answer"></p>
         </div>
+       
         <section>
+            <div>
             <div class="ball" id='ball-1'></div>
             <div class="ball" id='ball-2'></div>
+        </div>
+        <div>
             <div class="ball" id='ball-3'></div>
+       
             <div class="ball" id='ball-4'></div>
+        </div>
+        <div>
             <div class="ball" id='ball-5'></div>
             <div class="ball" id='ball-6'></div>
+        </div>
         </section>
-        <button id="reset-game">Reiniciar</button>
     </main>
+    <footer>
+        <p>Desenvolvido Por Wanny Martins <br> Direitos Reservados</p>
+    </footer>
   <script src="script.js"></script>  
 </body>
 </html>
